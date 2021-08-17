@@ -1,9 +1,15 @@
 <template>
-Dashboard
+    <Navbar></Navbar>
+    <router-view/>
 </template>
 
 <script>
+import Navbar from '../components/Navbar.vue';
+
 export default {
+    components:{
+        Navbar,
+    },
     created() {
         const token = document.cookie.replace(/(?:(?:^|.*;\s*)shopToken\s*\=\s*([^;]*).*$)|^.*$/, "$1");
 

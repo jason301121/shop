@@ -57,7 +57,7 @@ export default {
                 console.log(token,expired);
                 document.cookie=`shopToken=${token};expires=${new Date(expired)}`
                 console.log(res);
-                this.$router.push('/dashboard');
+                this.$router.push('/dashboard/products');
                 }
             });
         }
